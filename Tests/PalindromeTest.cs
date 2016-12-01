@@ -12,7 +12,7 @@ namespace PalindromeTest
     {
       string wordInput = "tacocat";
       bool answer = true;
-      bool testOutput = Palindrome.PalindromeChecker(wordInput);
+      bool testOutput = IsPalindrome.PalindromeChecker(wordInput);
       Assert.Equal(answer, testOutput);
     }
   }
