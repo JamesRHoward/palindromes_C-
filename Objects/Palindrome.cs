@@ -9,16 +9,24 @@ namespace Palindrome.Object
     {
       int count = 0;
       char[] inputWord = word.ToCharArray();
-      int inputWord = word.Length;
+      int wordLength = word.Length;
 
-      for (i = 0; i < inputWord.Length; ++)
+      for (int i = 0; i < wordLength; i++)
       {
-        if (inputWord[i] == word.Length(word.Length -1) i - 1)
+        if (inputWord[i] == inputWord [(word.Length -1) - i])
         {
           count ++;
         }
       }
-      
+
+      if (count == wordLength)
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
     }
   }
 }
